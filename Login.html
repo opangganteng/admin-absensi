@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Admin</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <header>
+    <h1>Login Admin</h1>
+    <img src="https://2.bp.blogspot.com/-b6o4GdvMkRk/W0zQ0cnjyUI/AAAAAAAAPQA/LuxyEjT9A7snzZkABvG52Qw3dl3IvmVxwCLcBGAs/s1600/Logo-SMAN-1-Cibinong-237-design.png" alt="Logo SMAN 1 Cibinong">
+  </header>
+
+  <section>
+    <form id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+
+      <button type="submit">Login</button>
+    </form>
+    <p id="errorMsg"></p>
+  </section>
+
+  <script>
+    const loginForm = document.getElementById('loginForm');
+    const errorMsg = document.getElementById('errorMsg');
+
+    loginForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      if (username === "admin1" && password === "sayaadmin123") {
+        localStorage.setItem('isLoggedIn', 'true');
+        window.location.href = 'admin.html';
+      } else {
+        errorMsg.textContent = "Username atau Password salah!";
+      }
+    });
+  </script>
+</body>
+</html>

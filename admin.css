@@ -1,0 +1,98 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  background: #f2f2f2;
+  padding: 20px;
+}
+
+/* Tabel Absensi */
+#attendanceTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+#attendanceTable th, #attendanceTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#attendanceTable th {
+  background-color: #1E40AF;
+  color: white;
+  font-weight: bold;
+}
+
+#attendanceTable img {
+  max-width: 100px;
+  border-radius: 8px;
+}
+
+/* Tombol dan Info */
+.jumlah-data {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #1E40AF;
+}
+
+.clean-btn,
+.hapus-btn,
+#downloadCsvBtn,
+#downloadExcelBtn {
+  margin: 10px 5px;
+  padding: 8px 16px;
+  background-color: #1E40AF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.clean-btn:hover,
+.hapus-btn:hover,
+#downloadCsvBtn:hover,
+#downloadExcelBtn:hover {
+  background-color: #3b60f3;
+}
+
+/* Logout */
+.logout-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.logout-btn img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Container Section */
+section {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  #attendanceTable {
+    font-size: 12px;
+  }
+
+  .logout-btn img {
+    width: 24px;
+    height: 24px;
+  }
+}

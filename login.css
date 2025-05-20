@@ -1,0 +1,57 @@
+/* Reset dasar */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f3f4f6;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: #1E40AF;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+/* Form login */
+input[type="text"], input[type="password"], button {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+button {
+  background-color: #1E40AF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #3b60f3;
+}
+
+header img {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+}
